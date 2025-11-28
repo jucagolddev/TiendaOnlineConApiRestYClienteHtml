@@ -83,7 +83,10 @@ El proyecto sigue una arquitectura **MVC simplificada** con separación clara en
 │       ├── 🖼️ 6.jpg
 │       ├── 🖼️ 7.jpg
 │       ├── 🖼️ 8.jpg
-│       └── 🖼️ 9.jpg
+│       ├── 🖼️ 9.jpg
+│       ├── 🖼️ CCarrito.png
+│       ├── 🖼️ CDashboard.png
+│       └── 🖼️ CLog.png
 ├── 📁 css
 │   └── 🎨 estilos.css
 ├── 📁 data
