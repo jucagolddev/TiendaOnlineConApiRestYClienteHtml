@@ -15,7 +15,7 @@ Este proyecto ha sido construido sin depender de frameworks pesados (como React,
 *(Puedes subir capturas de tu web a la carpeta assets y enlazarlas aquí)*
 | Login | Catálogo | Carrito |
 |:---:|:---:|:---:|
-| ![Login](https://via.placeholder.assets/img/CLog.png) | ![Dashboard](https://via.placeholder.assets/img/CDashboard.png?text=Catalogo) | ![Cart](https://via.placeholder.assets/img/CCarrito.png) |
+| ![Login](assets/img/CLog.png) | ![Dashboard](assets/img/CDashboard.png) | ![Cart](assets/img/CCarrito.png) |
 
 ---
 
