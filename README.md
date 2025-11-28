@@ -59,7 +59,7 @@ El proyecto sigue una arquitectura **MVC simplificada** con separación clara en
     * Navegación fluida y diseño adaptable a Móvil, Tablet y Escritorio.
 
 ---
-
+```bash
 ## 📂 Estructura del Proyecto
 📁TiendaOnline/
 ├── 📁 api
