@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Legal y Ayuda - JUCASHOP</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body id="page-legal">
+
+    <header>
+        <nav class="container">
+            <div class="logo"><a href="dashboard.html">JUCASHOP</a></div>
+            <div class="menu-toggle">☰</div>
+            <div class="nav-links">
+                <a href="dashboard.html">Inicio</a>
+                <a href="categories.html">Categorías</a>
+                <a href="cart.html">Carrito <span id="cart-count"
+                        style="background:#fff; color:#FF6000; padding:2px 6px; border-radius:10px; font-size:0.8rem; font-weight:bold;">0</span></a>
+                <a onclick="AuthService.logout()" style="cursor: pointer;">Salir</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <div class="page-intro">
+            <h1>Centro de Información Legal</h1>
+            <p>Transparencia, garantías y confianza.</p>
+        </div>
+
+        <div style="margin-bottom: 2rem; display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+            <a href="#aviso-legal" class="btn" style="background: #eee; color: #333;">Aviso Legal</a>
+            <a href="#privacidad" class="btn" style="background: #eee; color: #333;">Privacidad y Cookies</a>
+            <a href="#garantias" class="btn" style="background: #eee; color: #333;">Garantías</a>
+            <a href="#devoluciones" class="btn" style="background: #eee; color: #333;">Política de Devoluciones</a>
+        </div>
+
+        <section id="aviso-legal" class="content-box">
+            <h2>⚖️ 1. Aviso Legal y Titularidad</h2>
+            <p>En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la
+                Información y Comercio Electrónico (LSSICE), se exponen a continuación los datos identificativos del
+                titular del sitio web:</p>
+            <ul>
+                <li><strong>Denominación Social:</strong> JUCASHOP TECHNOLOGY S.L. (Sociedad Ficticia para Proyecto
+                    Educativo)</li>
+                <li><strong>Domicilio Social:</strong> C/ Gran Vía 25, 28013, Madrid, España.</li>
+                <li><strong>NIF:</strong> B-12345678</li>
+                <li><strong>Email de contacto:</strong> legal@jucashop.demo</li>
+                <li><strong>Actividad:</strong> Venta minorista de componentes informáticos y electrónica de consumo.
+                </li>
+            </ul>
+        </section>
+
+        <section id="privacidad" class="content-box">
+            <h2>🔒 2. Política de Privacidad y Protección de Datos</h2>
+            <p>JUCASHOP se compromete a proteger la privacidad de sus usuarios de acuerdo con el <strong>Reglamento (UE)
+                    2016/679 (GDPR)</strong>. Los datos recabados en el formulario de registro y compra se utilizan
+                exclusivamente para:</p>
+            <ol style="list-style-type: decimal; padding-left: 20px; margin-bottom: 1rem; color: #555;">
+                <li style="margin-bottom: 5px;">Procesar, enviar y facturar los pedidos realizados.</li>
+                <li style="margin-bottom: 5px;">Gestionar devoluciones y tramitar garantías.</li>
+                <li style="margin-bottom: 5px;">Enviar comunicaciones sobre el estado del pedido.</li>
+            </ol>
+            <p><strong>Tus derechos:</strong> Como usuario, tienes derecho a acceder, rectificar, limitar y suprimir tus
+                datos en cualquier momento contactando con nuestro soporte.</p>
+        </section>
+
+        <section id="garantias" class="content-box">
+            <h2>🛡️ 3. Garantía de Productos</h2>
+            <p>Todos los productos vendidos en JUCASHOP cuentan con la <strong>Garantía Legal de 3 años</strong>
+                conforme al Real Decreto Legislativo 1/2007, vigente en España desde el 1 de enero de 2022.</p>
+
+            <h3>Cobertura de la Garantía</h3>
+            <p>La garantía cubre cualquier defecto de fabricación o falta de conformidad que se manifieste durante el
+                periodo establecido. JUCASHOP se compromete a la reparación, sustitución o reembolso del producto sin
+                coste para el consumidor.</p>
+
+            <div class="alert-box" style="background: #f8f9fa; border: 1px solid #ddd; color: #333;">
+                <strong>Exclusiones:</strong> La garantía no cubre daños causados por mal uso, manipulación indebida del
+                hardware (overclocking extremo no cubierto por fabricante), golpes, daños por líquidos o descargas
+                eléctricas externas.
+            </div>
+        </section>
+
+        <section id="devoluciones" class="content-box">
+            <h2>📦 4. Política de Devoluciones y Desistimiento</h2>
+            <p>Si no estás satisfecho con tu compra, dispones de un plazo de <strong>30 días naturales</strong> desde la
+                recepción del pedido para realizar la devolución.</p>
+
+            <h3>Requisitos para la devolución:</h3>
+            <ul>
+                <li>El producto debe estar en el mismo estado en que se entregó y conservar su <strong>embalaje
+                        original</strong> y manuales.</li>
+                <li>No se aceptan devoluciones de productos de higiene (auriculares in-ear) si han sido desprecintados,
+                    ni software con la licencia activada.</li>
+                <li>Los componentes electrónicos (CPUs, Placas Base) deben incluir sus protectores de pines intactos.
+                </li>
+            </ul>
+
+            <h3 style="margin-top: 20px;">Proceso de RMA (Retorno de Mercancía)</h3>
+            <p>Para iniciar una devolución, accede a tu área de usuario o contacta con soporte indicando tu número de
+                pedido. Se generará una etiqueta de envío para la recogida del paquete.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="col">
+                    <h4>JUCASHOP</h4>
+                    <ul>
+                        <li><a href="acerca.html">Sobre el Proyecto</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Nuestras Tiendas</h4>
+                    <ul>
+                        <li><a href="tiendas.html">Ver Tiendas Físicas</a></li>
+                        <li><a href="tiendas.html">Horarios</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Atención al Cliente</h4>
+                    <ul>
+                        <li><a href="contacto.html">Centro de Soporte</a></li>
+                        <li><a href="legal.html#garantias">Garantías</a></li>
+                        <li><a href="legal.html#devoluciones">Devoluciones</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="legal.html#aviso-legal">Aviso Legal</a></li>
+                        <li><a href="legal.html#privacidad">Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">&copy; 2025 JUCASHOP. Replica Educativa - Juan Carlos Dorado.</div>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

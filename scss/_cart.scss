@@ -1,0 +1,123 @@
+/* scss/_cart.scss */
+@use "variables" as *;
+@use "mixins" as *;
+
+.cart-box {
+  background: $color-blanco;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+
+  //Estilos generales de la tabla
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+
+    th,
+    td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid $color-borde;
+      vertical-align: middle;
+    }
+
+    th {
+      background-color: $color-claro;
+      color: $color-oscuro;
+      font-weight: 600;
+    }
+
+    .qty-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      button {
+        width: 32px;
+        height: 32px;
+        border: 1px solid $color-borde;
+        background: $color-blanco;
+        cursor: pointer;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: background 0.2s;
+
+        &:hover {
+          background: $color-claro;
+        }
+      }
+    }
+  }
+
+  .cart-summary {
+    text-align: right;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid $color-borde;
+
+    h3 {
+      font-size: 1.5rem;
+      color: $color-oscuro;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+//Responsive Tabla para Movil
+@include mobile {
+  .cart-box {
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+    }
+
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+    tr {
+      margin-bottom: 15px;
+      border: 1px solid $color-borde;
+      border-radius: 8px;
+      padding: 15px;
+      background: $color-blanco;
+      box-shadow: 0 2px 5px #0000001a;
+    }
+
+    td {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+      text-align: right;
+      border-bottom: 1px solid #eee;
+      min-height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      &:last-child {
+        border-bottom: none;
+        justify-content: center;
+        padding-left: 0;
+      }
+
+      &::before {
+        position: absolute;
+        left: 0;
+        width: 45%;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        content: attr(data-label);
+        color: $color-gris;
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - JUCASHOP</title>
+    <!-- Enlace a la hoja de estilos principal -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body id="page-dashboard">
+
+    <!-- Encabezado de la página -->
+    <header>
+        <nav class="container">
+            <!-- Logotipo y enlace a la página principal -->
+            <div class="logo">
+                <a href="dashboard.html">JUCASHOP</a>
+            </div>
+
+            <!-- Botón de menú para dispositivos móviles -->
+            <div class="menu-toggle">☰</div>
+
+            <!-- Enlaces de navegación -->
+            <div class="nav-links">
+                <a href="dashboard.html">Inicio</a>
+                <a href="categories.html">Categorías</a>
+                <!-- Enlace al carrito con contador de productos -->
+                <a href="cart.html">Carrito <span id="cart-count"
+                        style="background:#fff; color:#FF6000; padding:2px 6px; border-radius:10px; font-size:0.8rem; font-weight:bold;">0</span></a>
+                <!-- Botón para cerrar sesión -->
+                <a onclick="AuthService.logout()" style="cursor: pointer;">Salir</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal: Página de inicio -->
+    <main class="container">
+        <!-- Sección de productos destacados -->
+        <section>
+            <h1 style="border-bottom: 3px solid #FF6000; display:inline-block; margin-bottom: 20px;">
+                Productos Destacados
+            </h1>
+
+            <!-- Contenedor para los productos destacados (cargados dinámicamente) -->
+            <div id="destacados-container" class="grid-products">
+                <p>Cargando productos...</p>
+            </div>
+        </section>
+
+        <!-- Sección de productos vistos recientemente (inicialmente oculta) -->
+        <section id="recientes-section"
+            style="display:none; margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee;">
+            <h2 style="color: #666; font-size: 1.2rem;">Vistos Recientemente</h2>
+            <div id="recientes-container" class="grid-products"></div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+
+                <div class="col">
+                    <h4>JUCASHOP</h4>
+                    <ul>
+                        <li><a href="acerca.html">Sobre el Proyecto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Nuestras Tiendas</h4>
+                    <ul>
+                        <li><a href="tiendas.html">Ver Tiendas Físicas</a></li>
+                        <li><a href="tiendas.html">Horarios</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Atención al Cliente</h4>
+                    <ul>
+                        <li><a href="contacto.html">Centro de Soporte</a></li>
+                        <li><a href="legal.html">Garantías</a></li>
+                        <li><a href="legal.html">Devoluciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="legal.html">Aviso Legal</a></li>
+                        <li><a href="legal.html">Privacidad</a></li>
+                        <li><a href="legal.html">Cookies</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                &copy; 2025 JUCASHOP. Replica Educativa - Juan Carlos Dorado.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de la aplicación -->
+    <script src="js/auth.js"></script> <!-- Manejo de autenticación -->
+    <script src="js/app.js"></script> <!-- Lógica principal de la tienda -->
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre el Proyecto - JUCASHOP</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body id="page-about">
+
+    <header>
+        <nav class="container">
+            <div class="logo"><a href="dashboard.html">JUCASHOP</a></div>
+            <div class="menu-toggle">☰</div>
+            <div class="nav-links">
+                <a href="dashboard.html">Inicio</a>
+                <a href="categories.html">Categorías</a>
+                <a href="cart.html">Carrito <span id="cart-count"
+                        style="background:#fff; color:#FF6000; padding:2px 6px; border-radius:10px; font-size:0.8rem; font-weight:bold;">0</span></a>
+                <a onclick="AuthService.logout()" style="cursor: pointer;">Salir</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <div class="page-intro">
+            <h1>JUCASHOP: Proyecto Fullstack</h1>
+            <p>Réplica funcional basada en el e-commerce PcComponentes</p>
+        </div>
+
+        <section class="content-box">
+            <h2>Sobre este desarrollo</h2>
+            <p>
+                Esta aplicación web ha sido desarrollada completamente desde cero como una <strong>práctica avanzada de
+                    programación web</strong>.
+                El objetivo principal ha sido replicar la funcionalidad y la estética de una tienda online real sin
+                utilizar frameworks pesados, demostrando un dominio sólido de los lenguajes nativos.
+            </p>
+            <div class="alert-box">
+                <strong>Nota Importante:</strong> Esta no es una tienda real. Los productos y precios son ficticios y
+                no se realizan transacciones bancarias reales.
+            </div>
+        </section>
+
+        <div class="tech-grid">
+
+            <div class="content-box">
+                <h3>Stack Tecnológico</h3>
+                <ul>
+                    <li>
+                        <span class="badge html">HTML5</span>
+                        <span class="badge sass">SCSS</span>
+                        <br>Diseño modular, responsive y metodología BEM.
+                    </li>
+                    <li>
+                        <span class="badge js">JavaScript</span>
+                        <br>Fetch API, manipulación del DOM y LocalStorage.
+                    </li>
+                    <li>
+                        <span class="badge php">PHP</span>
+                        <br>API RESTful personalizada sin frameworks.
+                    </li>
+                    <li>
+                        <span class="badge json">JSON</span>
+                        <br>Sistema de base de datos basado en archivos.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-box">
+                <h3>Funcionalidades Clave</h3>
+                <ul>
+                    <li>Sistema de <strong>Autenticación</strong> (Login y sesiones).</li>
+                    <li><strong>Carrito de compras</strong> con validación de stock en servidor.</li>
+                    <li>Carga dinámica de productos vía API.</li>
+                    <li>Diseño totalmente <strong>Responsive</strong>.</li>
+                    <li>Arquitectura Cliente-Servidor separada.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 1rem; color: #666;">
+            <p>Desarrollado por <strong>Juan Carlos Dorado Lopez</strong></p>
+            <p style="font-size: 0.9rem;">2025 - Proyecto Educativo</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+
+                <div class="col">
+                    <h4>JUCASHOP</h4>
+                    <ul>
+                        <li><a href="acerca.html">Sobre el Proyecto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Nuestras Tiendas</h4>
+                    <ul>
+                        <li><a href="tiendas.html">Ver Tiendas Físicas</a></li>
+                        <li><a href="tiendas.html">Horarios</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Atención al Cliente</h4>
+                    <ul>
+                        <li><a href="contacto.html">Centro de Soporte</a></li>
+                        <li><a href="legal.html">Garantías</a></li>
+                        <li><a href="legal.html">Devoluciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="legal.html">Aviso Legal</a></li>
+                        <li><a href="legal.html">Privacidad</a></li>
+                        <li><a href="legal.html">Cookies</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                &copy; 2025 JUCASHOP. Replica Educativa - Juan Carlos Dorado.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

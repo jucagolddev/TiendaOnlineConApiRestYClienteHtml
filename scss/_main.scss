@@ -1,0 +1,20 @@
+/* scss/_main.scss */
+@use "variables" as *;
+
+//Estilos Generales del sitio
+body {
+  font-family: $fuente-principal;
+  background-color: $color-claro;
+  color: $color-oscuro;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s; //Un pequeño extra visual
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

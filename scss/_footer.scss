@@ -1,0 +1,59 @@
+/* _footer.scss */
+@use "variables" as *;
+@use "mixins" as *;
+
+footer {
+  background-color: $color-oscuro;
+  color: $color-blanco;
+  margin-top: auto;
+  padding: 3rem 0 1rem 0;
+
+  .footer-content {
+    display: grid;
+    gap: 30px;
+    margin-bottom: 2rem;
+
+    //Responsive Grid
+    grid-template-columns: 1fr;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include desktop {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .col {
+      h4 {
+        color: $color-primario;
+        margin-bottom: 1.2rem;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+      }
+
+      ul li {
+        margin-bottom: 0.8rem;
+
+        a {
+          color: $color-blanco;
+          transition: color 0.3s;
+          font-size: 0.9rem;
+
+          &:hover {
+            color: $color-primario;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    border-top: 1px solid #ffffff1a;
+    padding-top: 1.5rem;
+    font-size: 0.85rem;
+    color: $color-gris;
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "user": "admin",
+    "pass": "1234"
+  },
+  {
+    "user": "cliente",
+    "pass": "0000"
+  },
+  {
+    "user": "usuario1",
+    "pass": "1234"
+  },
+  {
+    "user": "usuario2",
+    "pass": "5678"
+  },
+  {
+    "user": "invitado",
+    "pass": "guest"
+  }
+]

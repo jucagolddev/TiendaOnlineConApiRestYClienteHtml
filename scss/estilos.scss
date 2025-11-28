@@ -1,0 +1,24 @@
+/* scss/estilos.scss */
+
+// 1. Configuración y Herramientas
+// (Deben ir primero para que las variables existan cuando se cargue el resto)
+@use "variables" as *;
+@use "mixins" as *;
+
+// 2. Base y Reinicio
+@use "reset";
+@use "main";
+
+// 3. Estructura (Layout)
+@use "layout";
+@use "header";
+@use "footer";
+
+// 4. Componentes Reutilizables
+@use "components";
+
+// 5. Páginas Específicas
+@use "login";
+@use "cart";
+@use "pages";
+// Al compilar este archivo, se generará el css/estilos.css final.

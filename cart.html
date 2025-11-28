@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Carrito - JUCASHOP</title>
+    <!-- Enlace a la hoja de estilos principal -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body id="page-cart">
+
+    <!-- Encabezado de la página -->
+    <header>
+        <nav class="container">
+            <!-- Logotipo y enlace a la página principal -->
+            <div class="logo"><a href="dashboard.html">JUCASHOP</a></div>
+            <!-- Botón de menú para dispositivos móviles -->
+            <div class="menu-toggle">☰</div>
+            <!-- Enlaces de navegación -->
+            <div class="nav-links">
+                <a href="dashboard.html">Inicio</a>
+                <a href="categories.html">Categorías</a>
+                <!-- Enlace al carrito con contador de productos -->
+                <a href="cart.html">Carrito <span id="cart-count"
+                        style="background:#fff; color:#FF6000; padding:2px 6px; border-radius:10px; font-size:0.8rem; font-weight:bold;">0</span></a>
+                <!-- Botón para cerrar sesión -->
+                <a onclick="AuthService.logout()" style="cursor: pointer;">Salir</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal: Resumen del carrito -->
+    <main class="container">
+        <h1>Resumen de Compra</h1>
+
+        <div class="cart-box">
+            <!-- Tabla para listar los productos en el carrito -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cant.</th>
+                        <th>Subtotal</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <!-- El cuerpo de la tabla se llena dinámicamente con JS -->
+                <tbody id="cart-table-body">
+                </tbody>
+            </table>
+
+            <!-- Acciones de finalización de compra -->
+            <div class="checkout-actions">
+                <!-- Muestra el total a pagar -->
+                <h2>Total a pagar: <span id="cart-total">0.00€</span></h2>
+
+                <!-- Botón para procesar el pago -->
+                <button id="btn-checkout" class="btn btn-success"
+                    style="padding: 15px 40px; font-size: 1.1rem; width: auto; border:none; border-radius:5px; background-color:#2ecc71; color:white; cursor:pointer;">
+                    Finalizar y Pagar
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+
+                <div class="col">
+                    <h4>JUCASHOP</h4>
+                    <ul>
+                        <li><a href="acerca.html">Sobre el Proyecto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Nuestras Tiendas</h4>
+                    <ul>
+                        <li><a href="tiendas.html">Ver Tiendas Físicas</a></li>
+                        <li><a href="tiendas.html">Horarios</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Atención al Cliente</h4>
+                    <ul>
+                        <li><a href="contacto.html">Centro de Soporte</a></li>
+                        <li><a href="legal.html">Garantías</a></li>
+                        <li><a href="legal.html">Devoluciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="legal.html">Aviso Legal</a></li>
+                        <li><a href="legal.html">Privacidad</a></li>
+                        <li><a href="legal.html">Cookies</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                &copy; 2025 JUCASHOP. Replica Educativa - Juan Carlos Dorado.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de la aplicación -->
+    <script src="js/auth.js"></script> <!-- Manejo de autenticación -->
+    <script src="js/app.js"></script> <!-- Lógica principal de la tienda -->
+</body>
+
+</html>

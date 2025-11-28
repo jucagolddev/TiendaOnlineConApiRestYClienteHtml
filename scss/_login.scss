@@ -1,0 +1,102 @@
+/* scss/_login.scss */
+@use "variables" as *;
+@use "mixins" as *;
+
+.login-wrapper {
+  @include flex-center;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    $color-primario 0%,
+    $color-primario-oscuro 100%
+  );
+
+  .login-box {
+    background: $color-blanco;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 15px 30px #00000033;
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem;
+
+    h2 {
+      text-align: center;
+      color: $color-primario;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: $color-oscuro;
+      }
+
+      input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid $color-borde;
+        border-radius: 4px;
+        transition: border-color 0.3s;
+
+        &:focus {
+          border-color: $color-primario;
+        }
+      }
+    }
+
+    .btn {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 12px;
+      font-size: 1rem;
+    }
+
+    .btn-submit {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 14px 20px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: $color-blanco;
+      background: linear-gradient(
+        135deg,
+        $color-primario 0%,
+        $color-primario-oscuro 100%
+      );
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba($color-primario, 0.3);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba($color-primario, 0.4);
+        background: linear-gradient(
+          135deg,
+          $color-primario-oscuro 0%,
+          darken($color-primario-oscuro, 5%) 100%
+        );
+      }
+
+      &:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 8px rgba($color-primario, 0.3);
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba($color-primario, 0.2),
+          0 4px 12px rgba($color-primario, 0.3);
+      }
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "categorias": [
+    {
+      "id": 10,
+      "nombre": "Port\u00e1tiles"
+    },
+    {
+      "id": 20,
+      "nombre": "Componentes de PC"
+    },
+    {
+      "id": 21,
+      "nombre": "Tarjetas Gr\u00e1ficas"
+    },
+    {
+      "id": 22,
+      "nombre": "Procesadores (CPU)"
+    },
+    {
+      "id": 30,
+      "nombre": "Perif\u00e9ricos Gaming"
+    },
+    {
+      "id": 31,
+      "nombre": "Ratones"
+    },
+    {
+      "id": 32,
+      "nombre": "Teclados Mec\u00e1nicos"
+    },
+    {
+      "id": 40,
+      "nombre": "Monitores y Pantallas"
+    },
+    {
+      "id": 50,
+      "nombre": "Almacenamiento (SSD/HDD)"
+    }
+  ],
+  "productos": [
+    {
+      "id": 101,
+      "nombre": "MSI Raider GE76 - i9/32GB/1TB SSD",
+      "precio": 2499,
+      "img": "assets/img/1.jpg",
+      "destacado": true,
+      "id_categoria": 10,
+      "stock": 30
+    },
+    {
+      "id": 102,
+      "nombre": "MacBook Air M2 - 8GB/256GB",
+      "precio": 1299.99,
+      "img": "assets/img/2.jpg",
+      "destacado": true,
+      "id_categoria": 10,
+      "stock": 12
+    },
+    {
+      "id": 201,
+      "nombre": "Intel Core i9-13900K 3.0GHz",
+      "precio": 659.5,
+      "img": "assets/img/3.jpg",
+      "destacado": true,
+      "id_categoria": 20,
+      "stock": 13
+    },
+    {
+      "id": 202,
+      "nombre": "Nvidia GeForce RTX 4080 16GB",
+      "precio": 1350,
+      "img": "assets/img/4.jpg",
+      "destacado": false,
+      "id_categoria": 20,
+      "stock": 12
+    },
+    {
+      "id": 203,
+      "nombre": "Corsair Vengeance DDR5 32GB (2x16GB)",
+      "precio": 145.9,
+      "img": "assets/img/5.jpg",
+      "destacado": false,
+      "id_categoria": 20,
+      "stock": 50
+    },
+    {
+      "id": 301,
+      "nombre": "Logitech G502 HERO Rat\u00f3n Gaming",
+      "precio": 59.99,
+      "img": "assets/img/6.jpg",
+      "destacado": true,
+      "id_categoria": 31,
+      "stock": 40
+    },
+    {
+      "id": 302,
+      "nombre": "Razer BlackWidow V3 Teclado Mec\u00e1nico",
+      "precio": 129.99,
+      "img": "assets/img/7.jpg",
+      "destacado": false,
+      "id_categoria": 32,
+      "stock": 20
+    },
+    {
+      "id": 303,
+      "nombre": "Auriculares HyperX Cloud II",
+      "precio": 89.95,
+      "img": "assets/img/8.jpg",
+      "destacado": false,
+      "id_categoria": 30,
+      "stock": 25
+    },
+    {
+      "id": 401,
+      "nombre": "Monitor LG UltraGear 27'' 144Hz",
+      "precio": 299,
+      "img": "assets/img/9.jpg",
+      "destacado": true,
+      "id_categoria": 40,
+      "stock": 8
+    },
+    {
+      "id": 402,
+      "nombre": "Samsung Odyssey G9 Curvo 49''",
+      "precio": 1199,
+      "img": "assets/img/10.jpg",
+      "destacado": true,
+      "id_categoria": 40,
+      "stock": 2
+    },
+    {
+      "id": 103,
+      "nombre": "Lenovo Legion 5 - Ryzen 7 / RTX 4060",
+      "precio": 1599,
+      "img": "assets/img/11.jpg",
+      "destacado": true,
+      "id_categoria": 10,
+      "stock": 7
+    },
+    {
+      "id": 210,
+      "nombre": "AMD Radeon RX 7900 XT 20GB",
+      "precio": 999,
+      "img": "assets/img/12.jpg",
+      "destacado": false,
+      "id_categoria": 21,
+      "stock": 4
+    },
+    {
+      "id": 211,
+      "nombre": "Gigabyte RTX 4070 Ti 12GB",
+      "precio": 850.5,
+      "img": "assets/img/13.jpg",
+      "destacado": true,
+      "id_categoria": 21,
+      "stock": 12
+    },
+    {
+      "id": 220,
+      "nombre": "AMD Ryzen 5 7600X",
+      "precio": 239.95,
+      "img": "assets/img/14.jpg",
+      "destacado": false,
+      "id_categoria": 22,
+      "stock": 30
+    },
+    {
+      "id": 310,
+      "nombre": "Razer Viper V2 Pro Inal\u00e1mbrico",
+      "precio": 115,
+      "img": "assets/img/15.jpg",
+      "destacado": true,
+      "id_categoria": 31,
+      "stock": 14
+    },
+    {
+      "id": 500,
+      "nombre": "SSD Kingston NV2 2TB NVMe Gen4",
+      "precio": 99.99,
+      "img": "assets/img/16.jpg",
+      "destacado": false,
+      "id_categoria": 50,
+      "stock": 60
+    }
+  ]
+}

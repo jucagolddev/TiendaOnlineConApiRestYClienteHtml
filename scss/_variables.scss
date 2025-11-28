@@ -1,0 +1,19 @@
+/* scss/_variables.scss */
+
+//Colores Corporativos (Estilo PcComponentes)
+$color-primario: #ff6000;
+$color-primario-oscuro: #cc4d00;
+$color-oscuro: #333333;
+$color-gris: #666666;
+$color-claro: #f2f2f2;
+$color-blanco: #ffffff;
+$color-borde: #e0e0e0;
+$color-peligro: #e74c3c;
+
+//Tipografia
+$fuente-principal: "Segoe UI", system-ui, sans-serif;
+
+//breakpoints (puntos de quiebre)
+$bp-movil: 480px;
+$bp-tablet: 768px;
+$bp-escritorio: 1024px;

@@ -1,0 +1,39 @@
+/* _reset.scss
+   Elimina los márgenes por defecto del navegador y establece
+   el modelo de caja 'border-box' para facilitar el cálculo de medidas.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; //Fundamental: el padding no aumenta el ancho total
+}
+
+//Estilos base para elementos comunes
+html,
+body {
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased; //Texto más nítido en Mac/iOS
+}
+
+img,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%; //Evita que las imágenes se salgan de sus contenedores
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit; //Heredar tipografía del body
+  outline: none;
+}
+
+ul,
+ol {
+  list-style: none; //Quitar viñetas por defecto
+}
