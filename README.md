@@ -12,7 +12,6 @@ Este proyecto ha sido construido sin depender de frameworks pesados (como React,
 
 ## 📸 Capturas de Pantalla
 
-*(Puedes subir capturas de tu web a la carpeta assets y enlazarlas aquí)*
 | Login | Catálogo | Carrito |
 |:---:|:---:|:---:|
 | ![Login](assets/img/CLog.png) | ![Dashboard](assets/img/CDashboard.png) | ![Cart](assets/img/CCarrito.png) |
